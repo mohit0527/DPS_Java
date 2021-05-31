@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <script type="text/javascript" src="win_calculator.js"></script>
+        <style>
+         table,
+        th,
+        td ,tr{
+            border: 1px dotted grey;
+            border-collapse: collapse;
+            text-align: center;
+            width:600px;
+            padding: 1px;
+        }
+        td{
+            margin-right:10px;
+        }
+        .s1
+        {
+            padding:6px;
+        }
+        .score6
+        {
+            margin-top:80px;
+            margin-left:290px;
+        }
+        #show
+        {
+            color:rgb(5, 102, 5);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="score6">
+        <table>
+            <tr>
+                <td>Enter the Team Name 1</td>
+                <td>Score 1</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="name1" name="teamA" placeholder="Enter team name" size="20"></td>
+                <td><input type="text" id="score1" name="score1" placeholder="score" size="20"></td>
+            </tr>
+            <tr>
+                <td>Enter the Team Name 2</td>
+                <td>Score 2</td>  
+            </tr>
+            <tr>
+                <td><input type="text" id="name2" name="teamB" placeholder="Enter team name" size="20"></td>
+                <td><input type="text" id="score2" name="score2" placeholder="score" size="20"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" onclick="Result()" id="Result">Result</button><br></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p id="show"></p></td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html> 
