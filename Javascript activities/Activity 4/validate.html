@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css"/>
+<title>JSActivity4</title>
+</head>
+<body>
+  <div class="boxed">
+<h3 style="text-align: center; padding:50px";>Login Page</h3>
+
+
+  <form action="/action_page.php">
+    <label for="usrname">Enter the User Name:</label> <input style="background-color: #4472C4;" type="text" id="usrname" name="usrname" ><br><br>
+
+    <label for="psw">Enter the Password:  &nbsp;	  </label> <input style="background-color: #4472C4;" type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" ><br><br>
+    <button class="button1" type="submit" value="Submit">Submit</button>
+    <button class="button" value="submit" onclick="func( )">Cancel</button>
+
+  </form>
+</div>
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+				
+<script src="act4.js"></script>
+
+</body>
+</html>
