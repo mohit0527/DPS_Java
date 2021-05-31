@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="team_score.js"></script>
+         <style>
+            .form
+            {
+               height:320px;
+               width:420px;
+               margin-top:70px;
+               margin-left:420px;
+               background-color:#f0e68c;
+            }
+            .required
+              {
+                color:blue;
+                margin-left: 2px;
+              }
+              .move
+              {
+                  margin-left:20px;
+                  margin-top:10px;
+              }
+              #team
+              {
+                  margin-left:49px;
+                  margin-top:10px;
+              }
+              #team4
+              {
+                  margin-left:4px;
+                  margin-top:10px;
+              }
+              #team3
+              {
+                  margin-left:68px;
+                  margin-top:10px;
+              }
+              #team1
+              {
+                 margin-left: 71px;
+                 margin-top:10px;
+              }
+              #add
+              {
+                font-size: 18px;
+              }
+              #save
+              {
+                  margin-top:5px;
+                  border:1px solid red;
+                  width: 12%;
+              }
+              #win1
+              {
+                  font-size: 18px;
+              }
+              #win
+              {
+                  font-size: 18px;
+              }
+              .s1
+              {
+                  margin-top:30px;
+              }
+              p
+              {
+                  
+                  display:inline;
+                word-wrap: break-word;
+              }
+         </style>
+    </head>
+    <body> 
+    <div class="form">
+        <div class="move" >
+        <div id="s1"><h2 >Match Summary</h2></div>
+        <label id="add">Team A</label><span class="required">*</span><input type="text" id="team" name="teamA" size="30" placeholder="Team A"><br>
+        <label id="add">Team B</label><span class="required">*</span><input type="text" id="team" name="teamB" size="30"  placeholder="Team B"><br>
+        <label id="add">Date</label><span class="required">*</span><input type="text" id="team1" name="date" size="30"  placeholder="DD/MM/YYYY"><br>
+        <label id="add">Time</label><span class="required">*</span><input type="text" id="team3" name="time" size="30"  placeholder="HH:MM:SS"><br>
+        <label id="add">Team A Score</label><span class="required">*</span><input type="text" id="team4" size="30"  name="ScoreA" placeholder="Runs/Wkts"><br>
+        <label id="add">Team B Score</label><span class="required">*</span><input type="text" id="team4" size="30"  name="ScoreB" placeholder="Runs/Wkts"><br>
+        <button type="submit" onclick="Check_Result()" id="save">Save</button><br>
+        <p id="win1">Winning Team : </p>
+        <p id="win"></p>
+    </div>
+    </div>
+    </body>
+</html>  
