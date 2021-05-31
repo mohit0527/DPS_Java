@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">label {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: left;
+        width: 500px;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+      input,select {
+  height: 20px;
+  align-items: right;
+  margin-left: 10px;
+}
+</style>
+<title>HTMLActivity2</title>
+</head>
+    <body>
+    <h2 style="background-color:#6495ED;margin-left: 350px; margin-right: 350px;
+    ; border-width:3px; border-style:solid ;text-align: center; padding: 10px;">Player Details</h2>
+    <!--form-->
+    <form>
+        <fieldset style="margin-left: 350px; margin-right: 350px; background-color: #87CEEB;border-width: 3px;">
+        <p style="color: #708090; text-align: center;">
+        <label><i>Name:</i><span style="color:red;">*</span> <input type="text" autofocus name="name" placeholder="Enter your name"></label> <br><br>
+        <label><i>DOB:</i><span style="color:red;">*</span> <input type="number" name="dob" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="DD/MM/YYYY"></label><br><br>
+        <label><i>Age</i><span style="color:red;">*</span> <input type="text" name="age" placeholder="Enter your age"></label><br><br>
+        <label><i>Email Id:</i><span style="color:red;">*</span> <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"placeholder="abc12@xyz.com"></label><br><br>
+        <label><i>Country</i><span style="color:red;">*</span> <select name="dropdown" name="country"><option value="Afghanistan">Afghanistan</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+            <option value="Anguilla">Anguilla</option>
+            <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+            <option value="Brunei Darussalam">Brunei Darussalam</option>
+            <option value="Cook Islands">Cook Islands</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Cota D'Ivoire">Cote d'Ivoire</option>
+            <option value="Croatia">Croatia (Hrvatska)</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Djibouti">Djibouti</option>
+            <option value="Dominica">Dominica</option>
+            <option value="Dominican Republic">Dominican Republic</option>
+            <option value="East Timor">East Timor</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Falkland Islands">Falkland Islands (Malvinas)</option>
+            <option value="Faroe Islands">Faroe Islands</option>
+            <option value="Fiji">Fiji</option>
+            <option value="Finland">Finland</option>
+            <option value="France">France</option>
+            <option value="France Metropolitan">France, Metropolitan</option>
+            <option value="French Guiana">French Guiana</option>
+            <option value="French Polynesia">French Polynesia</option>
+            <option value="French Southern Territories">French Southern Territories</option>
+            <option value="Gabon">Gabon</option>
+            <option value="Gambia">Gambia</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Germany">Germany</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Haiti">Haiti</option>
+            <option value="Heard and McDonald Islands">Heard and Mc Donald Islands</option>
+            <option value="Holy See">Holy See (Vatican City State)</option>
+            <option value="Honduras">Honduras</option>
+            <option value="Hong Kong">Hong Kong</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Iceland">Iceland</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Iran">Iran (Islamic Republic of)</option>
+            <option value="Democratic People's Republic of Korea">Korea, Democratic People's Republic of</option>
+            <option value="Korea">Korea, Republic of</option>
+            <option value="Kuwait">Kuwait</option>
+            <option value="Kyrgyzstan">Kyrgyzstan</option>
+            <option value="St. Helena">St. Helena</option>
+            <option value="St. Pierre and Miguelon">St. Pierre and Miquelon</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Turks and Caicos">Turks and Caicos Islands</option>
+            <option value="Tuvalu">Tuvalu</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Uzbekistan">Uzbekistan</option>
+            <option value="Vanuatu">Vanuatu</option>
+            <option value="Serbia">Serbia</option>
+            <option value="Zambia">Zambia</option>
+            <option value="Zimbabwe">Zimbabwe</option></select></label>
+            <br><br>
+        <label><i>Skill:</i><span style="color:red;">*</span> <input type="checkbox" name="batting" value="on">Batting
+                    <input type="checkbox" name="bowling" value="on">Bowling </label><br><br>
+        <label><i>Bat Style:</i> <input type="radio" name="right" value="Right handed">Right handed
+                        <input type="radio" name="left" value="left handed">Left Handed
+                        </label><br><br>
+        <label><i>Bowl Style:</i> <input type="radio" name="right" value="Right handed">Right handed
+                        <input type="radio" name="left" value="left handed">Left Handed
+                        </label><br><br>
+        <label><i>Matches:</i><span style="color:red;">*</span> <input type="number" name="matches" placeholder="Matches Played">
+        </label><br><br>
+        <label><i>Runs:</i><span style="color:red;">*</span> <input type="number" name="runs" placeholder="Total runs Scored">
+        </label><br><br>
+        <label><i>Wickets:</i><span style="color:red;">*</span> <input type="number" name="wicket" placeholder="Wickets">
+        </label><br><br>
+        <label><i>Achievements:</i> <textarea name="achieve" placeholder="Your Achievements in Cricket"></textarea>
+        </label><br><br>
+</p>
+</fieldset>
+<footer style="background-color:yellow;margin-left: 350px; margin-right: 350px; margin-top: 20px
+; border-width:2px; border-style:solid ;text-align: center; padding: 30px;"><input type="submit">      <input type="reset"></footer>
+    </form>
+    </body>
+</html>
